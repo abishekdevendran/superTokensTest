@@ -1,0 +1,30 @@
+{
+	// "ts-node": {
+	// 	"transpileOnly": true,
+	// 	"swc": true,
+	// 	"files": true,
+	// 	"compilerOptions": {
+	// 		"paths": {
+	// 			"@/*": ["./src/*"]
+	// 		}
+	// 	},
+	// 	"require": ["tsconfig-paths/register"],
+	// 	"esm": true
+	// },
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"outDir": "./dist" /* Allow 'import x from y' when a module doesn't have a default export. */,
+		"esModuleInterop": true /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"skipLibCheck": true /* Skip type checking all .d.ts files. */,
+		"sourceMap": true,
+		"alwaysStrict": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	}
+}
